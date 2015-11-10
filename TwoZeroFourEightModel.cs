@@ -21,6 +21,18 @@ namespace twozerofoureight
         {
             return board;
         }
+        public int score()
+        {
+            int r = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    r += board[i, j];
+                }
+            }
+            return r;
+        }
 
         public TwoZeroFourEightModel(int size)
         {
